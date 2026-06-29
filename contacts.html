@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Me</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:lightblue;
+    background-size:400% 400%;
+    animation:bgMove 12s ease infinite;
+    overflow:hidden;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.contact-card{
+    width:90%;
+    max-width:720px;
+    padding:45px;
+    border-radius:25px;
+    background:blue;
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.2);
+    box-shadow:0 0 30px rgba(0,255,255,.25);
+    text-align:center;
+    color:white;
+}
+
+.contact-card h1{
+    font-size:40px;
+    margin-bottom:35px;
+    color:#7dd3fc;
+    letter-spacing:2px;
+    text-shadow:0 0 15px #38bdf8;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:18px 22px;
+    margin:18px 0;
+    border-radius:15px;
+    background:rgba(255,255,255,.08);
+    transition:.4s;
+    border-left:5px solid #38bdf8;
+}
+
+.contact-item:hover{
+    transform:translateX(10px);
+    background:lightblue
+    box-shadow:0 0 18px rgba(56,189,248,.45);
+}
+
+.label{
+    font-size:18px;
+    font-weight:bold;
+    color:#7dd3fc;
+}
+
+.info{
+    font-size:17px;
+    color:#ffffff;
+    text-align:right;
+}
+
+.home-btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    text-decoration:none;
+    color:white;
+    background:blue;
+    border-radius:50px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.4s;
+    box-shadow:0 0 20px rgba(59,130,246,.5);
+}
+
+.home-btn:hover{
+    transform:translateY(-5px) scale(1.05);
+    box-shadow:0 0 30px #38bdf8;
+    background:lightblue
+}
+
+@media(max-width:600px){
+
+.contact-card{
+    padding:30px;
+}
+
+.contact-item{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+}
+
+.info{
+    text-align:center;
+}
+
+.contact-card h1{
+    font-size:30px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="contact-card">
+
+<h1>✨ Contact Me ✨</h1>
+
+<div class="contact-item">
+    <div class="label">📘 Facebook</div>
+    <div class="info">Char Dy</div>
+</div>
+
+<div class="contact-item">
+    <div class="label">📱 Phone Number</div>
+    <div class="info">09949082892</div>
+</div>
+
+<div class="contact-item">
+    <div class="label">📧 Gmail</div>
+    <div class="info">gealoneanchardy@gmail.com</div>
+</div>
+
+<div class="contact-item">
+    <div class="label">📍 Location</div>
+    <div class="info">Purok 14, Poblacion, Sulop, Davao del Sur</div>
+</div>
+
+<a href="index.html" class="home-btn">🏠 Back to Home</a>
+
+</div>
+
+</body>
+</html>
